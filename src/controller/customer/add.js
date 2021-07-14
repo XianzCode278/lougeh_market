@@ -1,5 +1,5 @@
 const customerAdd = ({ addCustomers }) => {
-  
+  console.log("sample")
     return async function post(httpRequest) {
       try {
         const { source = {}, ...info } = httpRequest.body;
