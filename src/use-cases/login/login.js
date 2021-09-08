@@ -12,13 +12,14 @@ const loginUser = ({ make_logins, loginDB}) => {
       msg1 = `Username or Password is Correct`
       return msg1;
      } 
+
     const {id} = res1
     const res = await loginDB.insertLogin({ data, id });
-      let msg = `Username or Password is Incorrect.`;
+      let msg = `Login not recorded.`;
     
-      if (res) {
-    msg = `LogIn SuccessFully.`;
-        return res;
+      if (res) { 
+       msg = `Login SuccessFully.`;
+      return msg;
       } else {
         throw new Error(msg);
       }
