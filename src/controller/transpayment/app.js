@@ -17,7 +17,7 @@ const services = Object.freeze({
     transpaymentRetrieves,
     transpaymentDeletes
 })
-console.log("CONTROLLER")
+
 
 module.exports = services,
 module.exports = {

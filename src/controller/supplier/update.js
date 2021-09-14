@@ -12,7 +12,7 @@ const supplierUpdate = ({updateSuppliers}) => {
            source,
            id: httpRequest.params.id,
          };
-            console.log("CONTROLLER UPDATE")
+
          const patched = await updateSuppliers(toEdit);
          return {
            headers: {

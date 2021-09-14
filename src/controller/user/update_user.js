@@ -12,7 +12,6 @@ const userUpdate = ({userUpdates}) => {
            source,
            id: httpRequest.params.id,
          };
-            console.log("CONTROLLER UPDATE")
          const patched = await userUpdates(toEdit);
          return {
            headers: {

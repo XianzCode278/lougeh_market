@@ -12,7 +12,7 @@ const del_TransUpdate = ({update_delTrans}) => {
            source,
            id: httpRequest.params.id,
          };
-            console.log("CONTROLLER UPDATE")
+  
          const patched = await update_delTrans(toEdit);
          return {
            headers: {
