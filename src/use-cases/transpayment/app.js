@@ -15,7 +15,7 @@ const services = Object.freeze({
     retrieveTranspayments,
     deleteTranspayments
 })
-console.log("TRANSPAYMENT")
+
 module.exports = services,
 module.exports = {
   //  addTranspayments,
