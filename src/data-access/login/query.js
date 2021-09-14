@@ -16,7 +16,7 @@ const query = ({ connects, dotenv }) => {
                         where: {UserName: username, PassWord: password}
                 }).catch (err => {
                     if(err){
-                        res.statusCode(400)
+                       throw new Error("Error :", err)
                     }
                 })
                 return findUSer
